@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,40 @@
 </head>
 
 <body>
-    <h1>Welcome to Royal Travels!</h1>
-    <p>We specialize in providing the curated travel experiences of your dreams! From New
-        York to Napa Valley; from Mexico City to Rajasthan to the heart of Africa!  Our
-        concierges will engage in conversations with you and your travel party regarding
-        interests, must dos as well as eliciting from you what new experiences you would like
-        to have.  We will then design an itinerary that will encourage self-directed
-        exploration while making sure you leave your trip refreshed and satisfied.
-    </p>
-    <div></div>
-    <div></div>
-    <div></div>
-    <p>Please peruse our site to learn more. </p>
-      <div><a href=products.html>See more information about our products!</a></div>
-      <div><a href=aboutus.html>Learn more about us and our mission!</a></div>
-    <div></div>
-    <h2>To initiate your curated travel experience, 
-      <a href="inquiry@royaltravels.com">please contact us!</a>
-    </h2>
+    <h1 class="font-bold text-4xl text-purple-500 text-center m-8">Welcome to Royal Travels!</h1>
+    <div class="flex border-10">
+        <div class="md:w-1/2 px-8">
+            <p class="border-8 border-blue-500 p-2">
+                We specialize in providing the curated travel experiences of your dreams! From New
+                York to Napa Valley; from Mexico City to Rajasthan to the heart of Africa!  Our
+                concierges will engage in conversations with you and your travel party regarding
+                interests, must dos as well as eliciting from you what new experiences you would like
+                to have.  We will then design an itinerary that will encourage self-directed
+                exploration while making sure you leave your trip refreshed and satisfied.
+            </p>
+        </div>
+
+        <div class="md:w-1/2 px-8">
+            <p>Please peruse our site to learn more. </p>
+            <div class="underline font-bold text-red-600 m-2"><a href=products.html>See more information about our products!</a></div>
+            <div class="underline font-bold text-red-600 m-2"><a href=aboutus.html>Learn more about us and our mission!</a></div>
+            <h2 class="text-2x1 mt-4 mb-2">To initiate your curated travel experience, please fill out the form below:</h2>
+
+            <form netlify>
+                <label class="block mt-2 font-bold" for="name">What is your name?</label>
+                <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+                focus:border-purple-500" type="text" id="name" name="name">
+                <label class="block mt-2 font-bold" for="email">What is your email address?</label>
+                <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+                focus:border-purple-500" type="text" id="email" name="email">
+                <label class="block mt-2 font-bold" for="phone">What is your phone number?</label>
+                <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+                focus:border-purple-500" type="text" id="phone" name="phone">
+                
+                <button class="block mt-4 text-white bg-purple-500 rounded px-4 py-2">Submit form!</button>
+              </form>
+        </div>
+    </div>
 
 </body>
 </html>
